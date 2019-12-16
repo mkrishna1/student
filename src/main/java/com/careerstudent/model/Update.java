@@ -3,7 +3,15 @@ package com.careerstudent.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Update {
-	 private String id,userid,name,mobile,password;
+	 public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	private String id,userid,username,name,mobile,password;
 
 	 public String getId() {
 		return id;

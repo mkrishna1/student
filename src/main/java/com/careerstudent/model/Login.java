@@ -4,7 +4,13 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Login {
-	String userid, name, mobile, password;
+	String userid, username, name, mobile, password;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
 	public String getName() {
 		return name;
 	}

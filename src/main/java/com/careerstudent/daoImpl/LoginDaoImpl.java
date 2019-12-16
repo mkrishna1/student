@@ -16,7 +16,7 @@ public class LoginDaoImpl implements LoginDao{
 	
 	@Override
 	public Login userlogindao(String userid, String password) {
-		String sql = "select userid,name,mobile,password from student where userid = ? and password = ?";
+		String sql = "select userid,username,name,mobile,password from student where userid = ? and password = ?";
 		try {
 		return this.jdbcTemplate.queryForObject(sql,new BeanPropertyRowMapper<Login>(Login.class), userid, password);
 		}catch (Exception e) {

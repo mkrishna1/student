@@ -38,7 +38,7 @@ public class LoginController {
 			
 			CustomErrorType c1 = new CustomErrorType();
 			c1.setResponse(500);
-			c1.setMessage("Incorrect Username or Password");
+			c1.setMessage("Incorrect Userid or Password");
 			return new ResponseEntity<>(c1, HttpStatus.OK);
 			
 		}

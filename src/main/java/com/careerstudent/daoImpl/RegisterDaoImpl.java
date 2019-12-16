@@ -21,8 +21,8 @@ public class RegisterDaoImpl implements RegisterDao {
 			String str = s1.getName();
 				String[] Str = str.split(" ");
 					for(int i=0;i<Str.length;) {
-						String sql = "insert into student (userid, name, mobile, password) values (?,?,?,?)";
-						jdbcTemplate.update(sql, s1.getUserid(),s1.getName(),s1.getMobile(),s1.getPassword());
+						String sql = "insert into student (userid, username, name, mobile, password) values (?,?,?,?,?)";
+						jdbcTemplate.update(sql, s1.getUserid(),s1.getUsername(),s1.getName(),s1.getMobile(),s1.getPassword());
 						break;
 					}
 		}

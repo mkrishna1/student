@@ -8,5 +8,5 @@ import com.careerstudent.model.DAOUser;
 @Repository
 public interface UserDao extends CrudRepository<DAOUser, String> {
 
-	UserDao findByName(String name);
+	UserDao findByUsername(String username);
 }
